@@ -6,7 +6,8 @@ This is extension for [Flycheck](http://www.flycheck.org/). It implements minor-
 
 ![flycheck-popup-tip screenshot](screenshots/01.png)
 
-There is [official flycheck-pos-tip](https://github.com/flycheck/flycheck-pos-tip) extension for displaying errors under point. However, it does not display popup if you run Emacs under TTY. Also popups made by `pos-tip` library does not always look good, especially on macOS.
+There is [official flycheck-pos-tip](https://github.com/flycheck/flycheck-pos-tip) extension for displaying errors under point. However, it does not display popup if you run Emacs under TTY. It displays message on echo area and that is often used for ELDoc.
+Also, popups made by `pos-tip` library does not always look good, especially on macOS and Windows.
 
 ## Installation
 
