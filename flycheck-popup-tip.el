@@ -5,8 +5,8 @@
 ;; Author: Saša Jovanić <info@simplify.ba>
 ;; URL: https://github.com/Simplify/flycheck-popup-tip/
 ;; Keywords: convenience, tools, flycheck, tooltip
-;; Version: 0.10.0
-;; Package-Version: 0.10.0
+;; Version: 0.10.1
+;; Package-Version: 0.10.1
 ;; Package-Requires: ((flycheck "0.22") (popup "0.5") (emacs "24"))
 
 ;; This file is not part of GNU Emacs.
@@ -128,8 +128,8 @@
            (eq flycheck-display-errors-function
                #'flycheck-popup-tip-show-popup))
       (setq flycheck-display-errors-function
-            flycheck-pos-tip-old-display-function
-            flycheck-pos-tip-old-display-function nil)
+            flycheck-popup-tip-old-display-function
+            flycheck-popup-tip-old-display-function nil)
       (dolist (hook hooks)
         (remove-hook hook 'flycheck-popup-tip-delete-popup))))))
 
