@@ -2,8 +2,8 @@
 
 ;; Copyright (C) 2017 Saša Jovanić
 
-;; Author: Saša Jovanić <info@simplify.ba>
-;; URL: https://github.com/Simplify/flycheck-popup-tip/
+;; Author: Saša Jovanić <sasa@simplify.ba>
+;; URL: https://github.com/flycheck/flycheck-popup-tip/
 ;; Keywords: convenience, tools, flycheck, tooltip
 ;; Version: 0.10.1
 ;; Package-Version: 0.10.1
@@ -35,7 +35,7 @@
 ;; https://github.com/flycheck/flycheck
 
 ;; For more information about this Flycheck extension:
-;; https://github.com/Simplify/flycheck-popup-tip
+;; https://github.com/flycheck/flycheck-popup-tip
 
 ;;;; Setup
 

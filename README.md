@@ -1,8 +1,8 @@
 # flycheck-popup-tip
 
-[![License GPL 3](https://img.shields.io/github/license/Simplify/flycheck-popup-tip.svg)][COPYING]
-[![Build Status](https://travis-ci.org/Simplify/flycheck-popup-tip.svg?branch=master)](https://travis-ci.org/Simplify/flycheck-popup-tip)
-[![Coverage Status](https://coveralls.io/repos/github/Simplify/flycheck-popup-tip/badge.svg)](https://coveralls.io/github/Simplify/flycheck-popup-tip)
+[![License GPL 3](https://img.shields.io/github/license/flycheck/flycheck-popup-tip.svg)][COPYING]
+[![Build Status](https://travis-ci.org/flycheck/flycheck-popup-tip.svg?branch=master)](https://travis-ci.org/flycheck/flycheck-popup-tip)
+[![Coverage Status](https://coveralls.io/repos/github/flycheck/flycheck-popup-tip/badge.svg)](https://coveralls.io/github/flycheck/flycheck-popup-tip)
 
 This is extension for [Flycheck](http://www.flycheck.org/). It implements minor-mode for displaying errors from Flycheck using [popup.el](https://github.com/auto-complete/popup-el).
 
@@ -73,5 +73,5 @@ PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 You should have received a copy of the GNU General Public License along with
 this program.  If not, see http://www.gnu.org/licenses/.
 
-[COPYING]: https://github.com/Simplify/flycheck-popup-tip/blob/master/COPYING
+[COPYING]: https://github.com/flycheck/flycheck-popup-tip/blob/master/COPYING
 [contrib]: http://www.flycheck.org/en/latest/contributor/contributing.html
