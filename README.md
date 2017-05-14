@@ -15,7 +15,23 @@ Also, popups made by `pos-tip` library does not always look good, especially on 
 
 ### Melpa
 
-Package is not yet available on [Melpa](https://melpa.org/).
+Package is available on [Melpa](https://melpa.org/).
+
+In your [Cask](http://cask.github.io) file:
+
+```cl
+(source gnu)
+(source melpa)
+
+(depends-on "flycheck-popup-tip")
+```
+
+In your `init.el`:
+
+```cl
+(with-eval-after-load 'flycheck
+  (flycheck-popup-tip-mode))
+```
 
 ### Manual
 

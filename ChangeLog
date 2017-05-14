@@ -1,9 +1,11 @@
 2017-05-14  Saša Jovanić  <sasa@simplify.ba>
 
+	* Release 0.11.0
 	* Added GPL3 text to all test files
 	* Added ChangeLog
 	* Updated README with contributing details
 	* Project moved to Flycheck org
+	* Added Melpa installation instructions
 
 2017-05-13  Saša Jovanić  <sasa@simplify.ba>
 

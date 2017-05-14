@@ -5,8 +5,8 @@
 ;; Author: Saša Jovanić <sasa@simplify.ba>
 ;; URL: https://github.com/flycheck/flycheck-popup-tip/
 ;; Keywords: convenience, tools, flycheck, tooltip
-;; Version: 0.10.1
-;; Package-Version: 0.10.1
+;; Version: 0.11.0
+;; Package-Version: 0.11.0
 ;; Package-Requires: ((flycheck "0.22") (popup "0.5") (emacs "24"))
 
 ;; This file is not part of GNU Emacs.
@@ -53,7 +53,7 @@
   "Display Flycheck errors in tooltips using popup.el."
   :prefix "flycheck-popup-tip-"
   :group 'flycheck
-  :link '(url-link :tag "Github" "https://github.com/Simplify/flycheck-popup-tip"))
+  :link '(url-link :tag "Github" "https://github.com/flycheck/flycheck-popup-tip"))
 
 (defcustom flycheck-popup-tip-error-prefix "\u27a4 "
   "String to be displayed before every error line in popup."
