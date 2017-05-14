@@ -1,6 +1,6 @@
 # flycheck-popup-tip
 
-[![License GPL 3](https://img.shields.io/badge/license-GPL_3-green.svg?dummy)](https://github.com/Simplify/flycheck-popup-tip/blob/master/COPYING)
+[![License GPL 3](https://img.shields.io/github/license/Simplify/flycheck-popup-tip.svg)][COPYING]
 [![Build Status](https://travis-ci.org/Simplify/flycheck-popup-tip.svg?branch=master)](https://travis-ci.org/Simplify/flycheck-popup-tip)
 [![Coverage Status](https://coveralls.io/repos/github/Simplify/flycheck-popup-tip/badge.svg)](https://coveralls.io/github/Simplify/flycheck-popup-tip)
 
@@ -8,7 +8,7 @@ This is extension for [Flycheck](http://www.flycheck.org/). It implements minor-
 
 ![flycheck-popup-tip screenshot](screenshots/01.png)
 
-There is [official flycheck-pos-tip](https://github.com/flycheck/flycheck-pos-tip) extension for displaying errors under point. However, it does not display popup if you run Emacs under TTY. It displays message on echo area and that is often used for ELDoc.
+There is [another official flycheck-pos-tip](https://github.com/flycheck/flycheck-pos-tip) extension for displaying errors under point. However, it does not display popup if you run Emacs under TTY. It displays message on echo area and that is often used for ELDoc.
 Also, popups made by `pos-tip` library does not always look good, especially on macOS and Windows.
 
 ## Installation
@@ -51,6 +51,14 @@ If you are planning to use `flycheck-pos-tip` with GUI Emacs and this extension 
     (flycheck-popup-tip-mode)))
 ```
 
+## Contributing
+
+We welcome all kinds of contributions, whether you write patches, open pull
+requests, write documentation, help others with Flycheck issues, or just tell
+other people about your experiences with Flycheck.  Please take a look at our
+[Contributor’s Guide][contrib]
+for help and guidance about contributing to Flycheck.
+
 ## License
 
 This program is free software: you can redistribute it and/or modify it under
@@ -64,3 +72,6 @@ PARTICULAR PURPOSE.  See the GNU General Public License for more details.
 
 You should have received a copy of the GNU General Public License along with
 this program.  If not, see http://www.gnu.org/licenses/.
+
+[COPYING]: https://github.com/Simplify/flycheck-popup-tip/blob/master/COPYING
+[contrib]: http://www.flycheck.org/en/latest/contributor/contributing.html

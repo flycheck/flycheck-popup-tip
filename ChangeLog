@@ -1,0 +1,17 @@
+2017-05-14  Saša Jovanić  <sasa@simplify.ba>
+
+	* Added GPL3 text to all test files
+	* Added ChangeLog
+	* Updated README with contributing details
+
+2017-05-13  Saša Jovanić  <sasa@simplify.ba>
+
+	* Release 0.10.1
+	* Added tests
+	* Added test coverage reports
+	* Added TravisCI and Coveralls integration
+	* Updated README
+
+2017-05-08  Saša Jovanić  <sasa@simplify.ba>
+
+	* Initial release 0.10.0
