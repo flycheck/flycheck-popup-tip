@@ -30,20 +30,7 @@ In your `init.el`:
 
 ```cl
 (with-eval-after-load 'flycheck
-  (flycheck-popup-tip-mode))
-```
-
-### Manual
-
-Download `flycheck-popup-tip.el` and load it in your `init.el`:
-
-``` elisp
-(add-to-list 'load-path "/path-to-directory-where-you-put-downloaded-file/")
-(load-library "flycheck-popup-tip")
-(eval-after-load 'flycheck
-  (progn
-    (require 'flycheck-popup-tip)
-    (flycheck-popup-tip-mode)))
+  '(add-hook 'flycheck-mode-hook 'flycheck-popup-tip-mode))
 ```
 
 ## Configuration options
@@ -74,6 +61,10 @@ requests, write documentation, help others with Flycheck issues, or just tell
 other people about your experiences with Flycheck.  Please take a look at our
 [Contributor’s Guide][contrib]
 for help and guidance about contributing to Flycheck.
+
+### Running tests
+
+`cask exec buttercup -L . -L tests`
 
 ## License
 
