@@ -1,3 +1,9 @@
+2017-06-04  Saša Jovanić  <sasa@simplify.ba>
+
+	* Release 0.12.0
+	* Moved from global minor mode to normal minor mode
+	* Removed manual instalation instructions
+
 2017-05-14  Saša Jovanić  <sasa@simplify.ba>
 
 	* Release 0.11.0

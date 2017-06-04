@@ -5,8 +5,8 @@
 ;; Author: Saša Jovanić <sasa@simplify.ba>
 ;; URL: https://github.com/flycheck/flycheck-popup-tip/
 ;; Keywords: convenience, tools, flycheck, tooltip
-;; Version: 0.11.0
-;; Package-Version: 0.11.0
+;; Version: 0.12.0
+;; Package-Version: 0.12.0
 ;; Package-Requires: ((flycheck "0.22") (popup "0.5") (emacs "24"))
 
 ;; This file is not part of GNU Emacs.
@@ -42,7 +42,7 @@
 ;; Add to your `init.el':
 ;;
 ;; (with-eval-after-load 'flycheck
-;;   (flycheck-popup-tip-mode))
+;;   '(add-hook 'flycheck-mode-hook 'flycheck-popup-tip-mode))
 
 ;;; Code:
 
@@ -107,8 +107,8 @@
 ;;;###autoload
 (define-minor-mode flycheck-popup-tip-mode
   "A minor mode to show Flycheck error messages in a popup."
-  :global t
-  :group 'flycheck
+  :lighter nil
+  :group 'flycheck-popup-tip
   (let ((hooks '(post-command-hook focus-out-hook)))
     (cond
      ;; Use our display function and remember the old one but only if we haven't
