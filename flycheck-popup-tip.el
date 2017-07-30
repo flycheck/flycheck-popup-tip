@@ -71,7 +71,7 @@
   "Delete messages currently being shown if any."
   (when (popup-live-p flycheck-popup-tip-object)
     (popup-delete flycheck-popup-tip-object))
-  (remove-hook 'pre-command-hook 'flycheck-popup-tip-delete-popup))
+  (remove-hook 'pre-command-hook 'flycheck-popup-tip-delete-popup t))
 
 (defun flycheck-popup-tip-format-errors (errors)
   "Formats ERRORS messages for display."
@@ -102,7 +102,7 @@
            (flycheck-popup-tip-format-errors errors)
            :nostrip t
            :nowait t))
-    (add-hook 'pre-command-hook 'flycheck-popup-tip-delete-popup)))
+    (add-hook 'pre-command-hook 'flycheck-popup-tip-delete-popup nil t)))
 
 ;;;###autoload
 (define-minor-mode flycheck-popup-tip-mode
@@ -121,7 +121,7 @@
             flycheck-display-errors-function
             #'flycheck-popup-tip-show-popup)
       (dolist (hook hooks)
-        (add-hook hook #'flycheck-popup-tip-delete-popup)))
+        (add-hook hook #'flycheck-popup-tip-delete-popup nil t)))
      ;; Reset the display function and remove ourselves from all hooks but only
      ;; if the mode is still active.
      ((and (not flycheck-popup-tip-mode)
@@ -131,7 +131,7 @@
             flycheck-popup-tip-old-display-function
             flycheck-popup-tip-old-display-function nil)
       (dolist (hook hooks)
-        (remove-hook hook 'flycheck-popup-tip-delete-popup))))))
+        (remove-hook hook 'flycheck-popup-tip-delete-popup t))))))
 
 (provide 'flycheck-popup-tip)
 
