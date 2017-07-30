@@ -67,7 +67,7 @@
 
   (describe "Function: flycheck-popup-tip-delete-popup"
     (it "deletes popup"
-      (add-hook 'pre-command-hook 'flycheck-popup-tip-delete-popup)
+      (add-hook 'pre-command-hook 'flycheck-popup-tip-delete-popup nil t)
       (spy-on 'popup-live-p :and-return-value t)
       (spy-on 'popup-delete :and-return-value t)
       (flycheck-popup-tip-delete-popup)
@@ -76,7 +76,7 @@
       (expect 'popup-delete :to-have-been-called))
 
     (it "deletes hook even if there is no popup"
-      (add-hook 'pre-command-hook 'flycheck-popup-tip-delete-popup)
+      (add-hook 'pre-command-hook 'flycheck-popup-tip-delete-popup nil t)
       (spy-on 'popup-live-p :and-return-value nil)
       (spy-on 'popup-delete :and-return-value t)
       (flycheck-popup-tip-delete-popup)
