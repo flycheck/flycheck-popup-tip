@@ -27,7 +27,7 @@
 
 (require 'buttercup)
 (require 'flycheck)
-(require 'undercover-init.el)
+(require 'undercover-init)
 (require 'flycheck-popup-tip)
 
 ;;(post-command-hook)
