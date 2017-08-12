@@ -45,7 +45,8 @@ Default value is "\u27a4 ": `➤ `.
 
 ## Usage with `flycheck-pos-tip`
 
-If you are planning to use `flycheck-pos-tip` with GUI Emacs and this extension on TTY, you can do it with following configuration:
+If you are planning to use `flycheck-pos-tip` with GUI Emacs and this
+extension on TTY, you can do it with following configuration:
 
 ``` elisp
 (eval-after-load 'flycheck
@@ -54,17 +55,29 @@ If you are planning to use `flycheck-pos-tip` with GUI Emacs and this extension 
     (flycheck-popup-tip-mode)))
 ```
 
+You can also do the following:
+
+``` elisp
+(setq flycheck-pos-tip-display-errors-tty-function #'flycheck-popup-tip-show-popup)
+(flycheck-pos-tip-mode)
+```
+
+That will help if you start Emacs in GUI, but run emacsclient in TTY.
+
 ## Contributing
 
 We welcome all kinds of contributions, whether you write patches, open pull
 requests, write documentation, help others with Flycheck issues, or just tell
 other people about your experiences with Flycheck.  Please take a look at our
-[Contributor’s Guide][contrib]
-for help and guidance about contributing to Flycheck.
+[Contributor’s Guide][contrib] for help and guidance about contributing to
+Flycheck.
 
 ### Running tests
 
-`cask exec buttercup -L . -L tests`
+`UNDERCOVER_FORCE=true UNDERCOVER_CONFIG='("*.el" (:report-file "local-report.json") (:send-report nil))' cask exec buttercup -L . -L tests`
+
+This will also generate `local-report.json` file where you can check if
+coverage dropped below 100%.
 
 ## License
 

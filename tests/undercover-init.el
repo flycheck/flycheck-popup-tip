@@ -29,5 +29,5 @@
 (when (require 'undercover nil t)
   (undercover "*.el"))
 
-(provide 'undercover-init.el)
+(provide 'undercover-init)
 ;;; undercover-init ends here

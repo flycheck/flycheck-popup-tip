@@ -95,8 +95,8 @@
 
 (defun flycheck-popup-tip-show-popup (errors)
   "Display ERRORS, using popup.el library."
+  (flycheck-popup-tip-delete-popup)
   (when errors
-    (flycheck-popup-tip-delete-popup)
     (setq flycheck-popup-tip-object
           (popup-tip
            (flycheck-popup-tip-format-errors errors)
