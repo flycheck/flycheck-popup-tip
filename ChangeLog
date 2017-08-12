@@ -1,3 +1,10 @@
+2017-08-13  Saša Jovanić  <sasa@simplify.ba>
+
+	* Removed `.el` suffix in `undercover-init` file
+	* Added better testing instructions
+	* Updated README to reflect using emacsclient in TTY and GUI deamon
+	* Fixed problem with not removing of tooltip when there is nothing to show (slow checkers)
+
 2017-07-30  Saša Jovanić  <sasa@simplify.ba>
 
 	* Release 0.12.1
