@@ -1,5 +1,6 @@
 2017-08-13  Saša Jovanić  <sasa@simplify.ba>
 
+	* Release 0.12.2
 	* Removed `.el` suffix in `undercover-init` file
 	* Added better testing instructions
 	* Updated README to reflect using emacsclient in TTY and GUI deamon

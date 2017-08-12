@@ -5,8 +5,8 @@
 ;; Author: Saša Jovanić <sasa@simplify.ba>
 ;; URL: https://github.com/flycheck/flycheck-popup-tip/
 ;; Keywords: convenience, tools, flycheck, tooltip
-;; Version: 0.12.1
-;; Package-Version: 0.12.1
+;; Version: 0.12.2
+;; Package-Version: 0.12.2
 ;; Package-Requires: ((flycheck "0.22") (popup "0.5") (emacs "24"))
 
 ;; This file is not part of GNU Emacs.
