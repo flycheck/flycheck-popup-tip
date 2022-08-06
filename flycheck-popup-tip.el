@@ -67,11 +67,18 @@
 (defvar flycheck-popup-tip-old-display-function nil
   "The former value of `flycheck-display-errors-function'.")
 
+(defvar flycheck-popup-tip-show-hook nil
+  "Hook run before when showing a popup.")
+
+(defvar flycheck-popup-tip-delete-hook nil
+  "Hook run before when deleting a popup.")
+
 (defun flycheck-popup-tip-delete-popup ()
   "Delete messages currently being shown if any."
+  (remove-hook 'pre-command-hook 'flycheck-popup-tip-delete-popup t)
   (when (popup-live-p flycheck-popup-tip-object)
-    (popup-delete flycheck-popup-tip-object))
-  (remove-hook 'pre-command-hook 'flycheck-popup-tip-delete-popup t))
+    (popup-delete flycheck-popup-tip-object)
+    (run-hook-with-args 'flycheck-popup-tip-delete-hook)))
 
 (defun flycheck-popup-tip-format-errors (errors)
   "Formats ERRORS messages for display."
@@ -97,6 +104,7 @@
   "Display ERRORS, using popup.el library."
   (flycheck-popup-tip-delete-popup)
   (when errors
+    (run-hook-with-args 'flycheck-popup-tip-show-hook)
     (setq flycheck-popup-tip-object
           (popup-tip
            (flycheck-popup-tip-format-errors errors)
