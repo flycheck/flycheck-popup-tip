@@ -26,6 +26,10 @@
 
 ;;; Commentary:
 
+;; This package is deprecated: Flycheck 38's built-in
+;; `flycheck-annotate-mode' replaces it, in GUI and terminal frames
+;; alike.  See the README for migration.
+
 ;; This is extension for Flycheck.
 
 ;; It displays Flycheck error messages in buffer using `popup.el' library.

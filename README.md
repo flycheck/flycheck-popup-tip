@@ -1,3 +1,17 @@
+> **This package is deprecated.**
+>
+> This package existed because tooltip-style error display didn't work in
+> terminals. Flycheck 38's built-in `flycheck-annotate-mode` shows errors
+> inline in GUI and terminal frames alike, with no popup.el dependency.
+>
+> To migrate, remove flycheck-popup-tip from your config and enable:
+>
+> ```elisp
+> (global-flycheck-annotate-mode)
+> ```
+>
+> This repository will be archived and receives no further updates.
+
 # flycheck-popup-tip
 
 [![License GPL 3](https://img.shields.io/github/license/flycheck/flycheck-popup-tip.svg)][COPYING]
